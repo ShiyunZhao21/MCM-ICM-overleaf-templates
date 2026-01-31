@@ -1,0 +1,74 @@
+\documentclass{ctexart}
+
+\usepackage{algpseudocode}
+\usepackage{graphicx}
+\usepackage{subcaption} % 提供 subfigure 环境
+\usepackage{amsmath}
+\usepackage[utf8]{inputenc}
+\usepackage{longtable}
+\usepackage{booktabs} % 美化表格
+\usepackage{multirow}  % 合并单元格
+\usepackage{makecell}  % 多行表头
+\usepackage{array}     % 列格式调整
+\usepackage{xcolor}    % 颜色支持
+\usepackage{colortbl}  % 表格着色
+\definecolor{lightgray}{gray}{0.92}
+\usepackage{float}
+\usepackage{listings} % 代码环境
+\usepackage{xcolor}
+\usepackage{booktabs} % 专业表格线
+\usepackage{multirow} % 用于多行合并
+\usepackage{array}    % 表格格式控制
+\usepackage{caption}  % 标题格式
+\newcolumntype{C}{>{\centering\arraybackslash}m{2.5cm}}
+\newcolumntype{D}{>{\centering\arraybackslash}m{1.8cm}}
+\lstset{
+    basicstyle=\ttfamily\footnotesize, % 字体样式
+    keywordstyle=\color{blue},         % 关键字颜色
+    commentstyle=\color{gray},         % 注释颜色
+    stringstyle=\color{red},           % 字符串颜色
+    numbers=left,                      % 显示行号
+    numberstyle=\tiny,                 % 行号字号
+    stepnumber=1,                      % 行号间隔
+    numbersep=5pt,                     % 行号与代码间距
+    frame=single,                      % 边框样式
+    backgroundcolor=\color{gray!10},   % 背景色
+    breaklines=true,                   % 自动换行
+    postbreak=\mbox{\textcolor{red}{$\hookrightarrow$}\space} % 换行符
+}
+\usepackage{array} % 提供p列格式支持
+\usepackage{geometry}
+\geometry{
+  a4paper,           % 使用 A4 纸（默认）
+  top=2.5cm,         % 上边距
+  bottom=2.5cm,      % 下边距
+  left=2.5cm,        % 左边距
+  right=2.5cm,       % 右边距
+  headheight=13.6pt, % 页眉高度（标准值）
+  footskip=1cm,      % 页脚基线到页面底部的距离
+  includehead,       % 包含页眉在版心计算内
+  includefoot        % 包含页脚在版心计算内
+}
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot[C]{\thepage}
+\renewcommand{\headrulewidth}{0pt}
+
+\date{}
+\title{你的标题}
+\begin{document}
+\maketitle
+\input{abstract}
+\newpage
+\input{1.Introduction}
+\input{2.Assumptions}
+\input{3.Models}
+\input{4.Conclusions}
+\newpage
+\input{5.References}
+\newpage
+\input{6.AI}
+\newpage
+\input{A letter to ...}
+\end{document}
